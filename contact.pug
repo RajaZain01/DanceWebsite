@@ -1,0 +1,20 @@
+extends base.pug
+block scripts
+    script(src="/index.js") 
+block style
+    style
+        include style.css
+        include styleContact.css
+block content
+    div.container
+        h1 Contact Us!
+        form(action="/contact",method = 'post', class='Myform')
+            input(type="text", name="name", class='myInput',placeholder="Enter your name")
+            input(type="text", name="age", class='myInput',placeholder="Enter your Age")
+            input(type="email", name="email", class='myInput',placeholder="Enter your Email")
+            input(type="phone", name="phone", class='myInput',placeholder="Enter your Phone")
+            input(type="adress", name="adress", class='myInput',placeholder="Enter your Adress")
+            input(type="text", name="desc", class='myInput',placeholder="Enter your Concern")
+            button(class='btn')
+                |  Submit 
+//- serf etna likha k hum contact mei navbar + footer export kr sakty hein ab agar hum localhost:portname/contact likheingy to navbar+footer humein show hga waha ye esliay q k humny base.pug mei ye sab blocks define kiay hein ab jaha hum ye likhengy to wha ye show hoga
