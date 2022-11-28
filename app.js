@@ -6,8 +6,8 @@ const app = express();
 
 const PORT = 8002;
 // Replace this string with your db connection string
-// const db_connection_string = "mongodb://user:password@localhost/zainkara"
-const db_connection_string = "mongodb://localhost:27017/zainkara"
+// const db_connection_string = "mongodb://localhost:27017/zainkara"
+const db_connection_string = "mongodb://user:password@localhost/zainkara"
 
 // Define mongoose schema
 const ContactModel = require("./schema")
