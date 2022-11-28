@@ -1,0 +1,33 @@
+extends base.pug
+block scripts
+    script(src="/index.js") 
+block style
+    style
+        //- include ./assets/css/style.css
+        //- include ./assets/css/styleContact.css
+block content
+    div.container
+        main#main
+            h1.ui.center.aligned.header All Contacts
+            .ui.container
+            table.ui.celled.table.center.aligned
+                thead
+                tr
+                    th Name
+                    th Email
+                    th Age
+                    th Phone
+                    th Address
+                    th Desc
+                tbody
+                each contact in contacts
+                    tr
+                        td #{contact.name}
+                        td #{contact.email}
+                        td #{contact.age}
+                        td #{contact.phone}
+                        td #{contact.address}
+                        td #{contact.desc}
+                tfoot
+                tr
+                    th(colspan='6')

@@ -1,0 +1,26 @@
+*{
+	scroll-behavior: smooth;
+	font-family: monospace;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+ul#navbar {
+	align-items: center;
+	list-style: none;
+	padding: 0 1rem;
+	display: flex;
+	gap: 1rem;
+}
+
+ul#navbar figure{
+	align-items: center;
+	display: flex;
+	gap: 1rem;
+}
+
+ul#navbar img#logo{
+	height: 50px;
+	width: 50px;
+}
